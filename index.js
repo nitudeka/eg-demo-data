@@ -51,6 +51,7 @@ const sendData = async data => {
       })
     });
 
+    console.log("inserted " + shopId);
     return "success";
   } catch (err) {
     console.log(err);
@@ -93,7 +94,6 @@ const insertDemoData = (lat, long, noOfDocs, range) => {
     recursive(length - 1);
   };
   recursive(length - 1);
-  console.log("inserted demo data successfully");
 };
 
-insertDemoData(26.1663901, 91.7828496, 50, 1200);
+insertDemoData(28.578576, 77.3240113, 50, 1200);
